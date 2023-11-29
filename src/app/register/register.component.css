@@ -1,0 +1,79 @@
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor principal */
+.container-fluid {
+    height: 100vh;
+}
+
+/* Estilo para la sección del formulario */
+.bg-light {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 128, 122, 0.5); /*  sombra morado */
+}
+
+/* Estilo para el título del formulario */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Estilo para las etiquetas de formulario */
+.form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo para los campos de formulario */
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #4CAF50;
+}
+
+/* Estilo para los botones */
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-outline-success {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+
+.btn-outline-success:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.btn-link {
+    color: #ff6a00;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
+/* Centrar el formulario de registro */
+.d-flex {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}

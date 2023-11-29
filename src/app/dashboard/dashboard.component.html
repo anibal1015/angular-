@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8232721784.js" crossorigin="anonymous"></script>
+    <title>Transporte Dashboard</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Contenido principal -->
+<main class="container d-flex flex-column justify-content-center">
+    <div class="row">
+        <!-- Sección de lista de buses -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Lista de Buses
+                </div>
+                <div class="card-body">
+                    <!-- Puedes usar ngFor para mostrar la lista de buses -->
+                    <ul class="list-group">
+                        <li class="list-group-item">Bus 1</li>
+                        <li class="list-group-item">Bus 2</li>
+                        <li class="list-group-item">Bus 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de opciones (añadir, actualizar, eliminar) -->
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    Crear Ruta
+                </div>
+                <div class="card-body">
+                    <!-- Contenido para las opciones CRUD -->
+                    <!-- Puedes usar formularios y manejar eventos para las operaciones CRUD -->
+
+                    <!-- Ejemplo de formulario para añadir una ruta -->
+                    <form>
+                        <div class="mb-3">
+                            <label for="busName" class="form-label">Indica la nueva ruta</label>
+                            <input type="text" class="form-control" id="busName" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Añade la ruta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nueva sección para la bandeja de entrada de empleo -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    Bandeja de Entrada - Empleo
+                </div>
+                <div class="card-body">
+                    <!-- Aquí puedes mostrar los mensajes de empleo o cualquier otra información relacionada -->
+                    <p>Mensaje 1</p>
+                    <p>Mensaje 2</p>    
+                    <!-- ... -->
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Barra de navegación -->
+<header class="vw-100 position-fixed bg-transparent h-10 d-flex justify-content-end z-index">
+    <div class="w-50">
+        <ul class="d-flex justify-content-around align-items-center list-unstyled h-100 text-white">
+            <li class="h-100 d-flex align-items-center">Sobre nosotros</li>
+            <li class="h-100 d-flex align-items-center">Nuestros servicios</li>
+            <li class="h-100 d-flex align-items-center">Contactanos</li>
+            <!-- Nuevos botones -->
+            <li><button class="btn btn-outline-success" (click)="verPerfil()"><i class="fas fa-user" style="color: blue;"></i> Ver Perfil</button></li>
+              <!-- <li><button class="btn btn-outline-success" (click)="verEmpleo()"><i class="fas fa-briefcase" style="color: green;"></i> Ver Empleo</button></li>-->
+            <li><button class="btn btn-outline-success btn-cerrar-sesion" (click)="navegarLogin()"><i class="fas fa-sign-out-alt" style="color: red;"></i> Cerrar sesión</button></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Importa Bootstrap y otros scripts según sea necesario -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* Estilos específicos para el dashboard */
+
+/* Contenedor principal */
+.container {
+    margin-top: 50px;
+}
+
+/* Estilo de la tarjeta */
+.card {
+    margin-bottom: 20px;
+}
+
+/* Encabezado de la tarjeta */
+.card-header {
+    font-size: 1.5rem;
+}
+
+/* Lista de buses */
+.list-group {
+    max-height: 300px; /* Ajusta la altura máxima según sea necesario */
+    overflow-y: auto; /* Añade un desplazamiento vertical si la lista es larga */
+}
+
+/* Formulario de opciones CRUD */
+form {
+    margin-top: 20px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+  }
+
+ /* Estilos específicos para el dashboard */
+ .container {
+    margin-top: 50px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+}
+
+/* Estilos para el botón de cerrar sesión */
+.btn-cerrar-sesion {
+    margin-top: auto; /* Mueve el botón hacia la parte inferior */
+}
+
+
+
+/* Estilos generales */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Mejora de tarjetas */
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+  }
+  
+  /* Estilo para los botones */
+  .btn {
+    border-radius: 5px;
+  }
+  
